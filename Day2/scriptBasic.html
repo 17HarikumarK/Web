@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage Example</title>
+    <script src="/Test Files/testFunction.js"></script>
+    <script src="/Examples/JQuery Lib/jquery.js"></script>
+</head>
+<body>
+
+<!-- Internal script -->
+    <script>
+        
+        alert('global script');
+        function test(){
+            console.log('Test invoked');
+        }
+        </script>
+
+    <input type="text" id="note">
+    <!-- inline script -->
+    <button onclick="alert ('Clicked');">Save</button>
+    <button onclick='test();'>Test Function</button>
+    <button onclick="testHello();">External function</button>
+
+
+    <!-- Check methods in JQuery Lib -->
+    <button onclick=""> JQuery Check</button>
+</body>
+</html>
